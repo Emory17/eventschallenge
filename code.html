@@ -314,7 +314,7 @@ function saveNewEvent(){
     let attendance = parseInt(document.getElementById("eattend").value);
 
     let dateValue = document.getElementById("edate").value;
-    dateValue = new Date(dateValue);
+    dateValue = new Date(dateValue + 'T00:00');
     let date = dateValue.toLocaleDateString();
 
     let newevent = {
@@ -384,7 +384,7 @@ function updateEvent(){
     let attendance = parseInt(document.getElementById("editattend").value);
 
     let dateValue = document.getElementById("editdate").value;
-    dateValue = new Date(dateValue);
+    dateValue = new Date(dateValue + 'T00:00');
     let date = dateValue.toLocaleDateString();
 
     let newevent = {
